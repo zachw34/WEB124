@@ -6,7 +6,7 @@ function Pet(name, type, age, owner) {
   this.owner = owner;
   
   // Create a Symbol for a unique ID key
-  const idKey = Symbol('petId');
+  const idPetKey = Symbol('petId');
   
   // 2. Methods
   this.getDescription = function() {
@@ -23,7 +23,7 @@ function Pet(name, type, age, owner) {
   };
   
   this.getID = function() {
-    return idKey;
+    return idPetKey;
   };
 }
 
