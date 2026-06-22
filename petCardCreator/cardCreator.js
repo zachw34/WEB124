@@ -1,4 +1,4 @@
-// 1. Constructor function for the animals we will list
+// Constructor function for the animals we will list
 function Pet(name, type, age, owner) {
   this.name = name;
   this.type = type;
@@ -8,7 +8,7 @@ function Pet(name, type, age, owner) {
   // Create a Symbol for a unique ID key
   const idPetKey = Symbol('petId');
   
-  // 2. Methods
+  // Methods "this" and "return"
   this.getDescription = function() {
     return `${this.name} is a ${this.type} and is ${this.age} years old`;
   };
@@ -27,14 +27,14 @@ function Pet(name, type, age, owner) {
   };
 }
 
-// 3. Create at least 3 pets (one has an owner, one doesn't)
+// Create at least 3 pets (one has an owner, one doesn't) "new" operator
 const pet1 = new Pet("Stanley", "cat", 6, { name: "Alice" });
 const pet2 = new Pet("Rex", "dog", 3, { name: "Bob" });
 const pet3 = new Pet("Sky", "falcon", 2); // No owner passed;
 
 const pets = [pet1, pet2, pet3];
 
-// 4. In the console, display: name, type, age, owner name
+// In the console, display: name, type, age, owner name
 console.log("--- Initial Pet Info ---");
 pets.forEach(pet => {
   console.log("Name:", pet.name);
@@ -44,12 +44,12 @@ pets.forEach(pet => {
   console.log("------------------------");
 });
 
-// 5. Call haveBirthday() on at least one pet and display updated info
+// Calling haveBirthday() on at least one pet and display updated info
 console.log("--- After Birthday ---");
 pet1.haveBirthday();
 console.log(pet1.getDescription());
 console.log("Updated Age:", pet1.age);
 console.log("------------------------");
 
-// 6. Display the current date and time using the Date object
+// Here display the current date and time using the Date object 
 console.log("Current Date & Time:", new Date().toString());
