@@ -5,7 +5,7 @@ const rawMovieData = [
   "Obsession,horror,8.1,obsessed@email.com",
   "The Godfather,drama,9.2,corleone@mob.com",
   "Toy Story,animation,8.3,woody@pixar.com",
-  "Interstellar,sci-fi,8.6",
+  "Interstellar,sci-fi,8.6"
 ];
 
 const movieObjects = [];
