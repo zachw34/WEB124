@@ -22,3 +22,8 @@ for (const movieString of movieData) {
   // Split the string into individual pieces by the coma
   const [title, genre, rating, reviewEmail] = movieString.split(',');
   
+// Create a new Movie object and add it to array
+const newMovie = new Movie(title, genre, rating, reviewEmail);
+  movieObjects.push(newMovie);
+}
+console.log(movieObjects);
