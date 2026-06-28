@@ -18,7 +18,7 @@ function Movie(title, genre, rating, reviewEmail) {
   this.id = Symbol('uniqueMovieId'); // Unique identifier
 }
 
-for (const movieString of movieData) {
+for (const movieString of rawMovieData) {
   // Split the string into individual pieces by the coma
   const [title, genre, rating, reviewEmail] = movieString.split(',');
   
