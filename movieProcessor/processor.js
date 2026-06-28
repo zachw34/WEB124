@@ -18,7 +18,7 @@ function Movie(title, genre, rating, reviewEmail) {
   this.rating = parseFloat(rating); // Converts the string rating to a number
   this.reviewEmail = reviewEmail || "N/A"; // Handles missing email
   this.id = Symbol('uniqueMovieId'); // Unique identifier
-}
+};
 
 for (const movieString of rawMovieData) {
   // Split the string into individual pieces by the coma
@@ -27,7 +27,7 @@ for (const movieString of rawMovieData) {
 // Create a new Movie object and add it to array
 const newMovie = new Movie(title, genre, rating, reviewEmail);
   movieObjects.push(newMovie);
-}
+};
 console.log(movieObjects);
 
 // Part 3 Add Methods
