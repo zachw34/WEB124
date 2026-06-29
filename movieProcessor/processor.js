@@ -51,7 +51,11 @@ Movie.prototype.getID = function() {
 
 // Part 4 Array and String Processing
 
-// Testing the output
+// Logging the output
 console.log(movieObjects);
 console.log(movieObjects[0].getSummary());
 console.log(movieObjects[0].getReviewEmail());
+
+// What are array methods, and how did you use them in this assignment? Array methods are built-in-functions made to manipulate and search a collection of data. My const rawMovieData is an example of how I used it. //
+// What does your regular expression check for? My parseFloat in this.rating searches and makes sure it converts to a number
+// How does try/catch help prevent errors in your program? It prevents runtime crashes by catching errors before it breaks your script.
