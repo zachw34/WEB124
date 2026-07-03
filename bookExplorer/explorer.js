@@ -30,7 +30,7 @@ console.log(document.body.children);
 // Part 4 Walking the DOM
 
 // Getting the ul element
-console.log(document.body.children)[2];
+console.log(document.body.children[2]);
 // Getting the parent of that li
 console.log(document.querySelector('li').parentElement);
 // Getting sibling of the initially selected li
