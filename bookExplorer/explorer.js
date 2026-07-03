@@ -15,3 +15,10 @@ const bookData = [
 bookData.forEach((book) => {
   console.log(`Title: ${book.title} | Author: ${book.author} | Pages: ${book.pages}`);
 });
+
+// Part 3: DOM Tree Exploration
+
+//Access entire HTML document
+console.log(document);
+// Access document body
+console.log(document.body)
