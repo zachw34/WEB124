@@ -21,4 +21,8 @@ bookData.forEach((book) => {
 //Access entire HTML document
 console.log(document);
 // Access document body
-console.log(document.body)
+console.log(document.body);
+// Accessing the first child of the body
+console.log(document.body.firstElementChild);
+// Accessing all children of the body
+console.log(document.body.children);
