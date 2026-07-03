@@ -28,5 +28,5 @@ console.log(document.body.firstElementChild);
 console.log(document.body.children);
 
 // Part 4 Walking the DOM
-
-console.log(document.body
+// Getting the ul element
+console.dir(document.body);
