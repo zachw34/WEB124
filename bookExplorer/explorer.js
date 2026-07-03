@@ -29,4 +29,4 @@ console.log(document.body.children);
 
 // Part 4 Walking the DOM
 // Getting the ul element
-console.dir(document.body);
+console.log(document.body.children)[2];
