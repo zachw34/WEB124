@@ -26,3 +26,7 @@ console.log(document.body);
 console.log(document.body.firstElementChild);
 // Accessing all children of the body
 console.log(document.body.children);
+
+// Part 4 Walking the DOM
+
+console.log(document.body
