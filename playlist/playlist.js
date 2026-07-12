@@ -8,6 +8,6 @@ const playlistButton = document.getElementById("update-btn");
 
 // To confirm it works
 
-playlistButton.addEventListener("click", () => {
+playlistButton.addEventListener(`click`, () => {
   console.log("Button works good!");
 });
