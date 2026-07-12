@@ -11,3 +11,9 @@ const playlistButton = document.getElementById("update-btn");
 playlistButton.addEventListener(`click`, () => {
   console.log("Button works good!");
 });
+
+// querySelector for p tag
+
+const myParagraph = document.querySelector("p");
+  console.log(myParagraph);
+
