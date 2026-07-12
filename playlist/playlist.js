@@ -16,5 +16,7 @@ console.log(playlistButton, myParagraph);
 
 // 1. To confirm it works
 playlistButton.addEventListener(`click`, () => {
-  console.log("Button works good!");
+  const heading = document.querySelector('h1');
+  // Change text
+  heading.textContent = 'The 2000s Hits Playlist';
 });
