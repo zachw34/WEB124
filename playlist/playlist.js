@@ -26,4 +26,19 @@ playlistButton.addEventListener(`click`, () => {
   console.log("Button was successfully selected and clicked!");
 });
 
+// Part 3 Event Bubbling
+
+// 1. Click Event for div (parent) and button (child)
+
+const updateBtn = document.getElementById('update-btn');
+const container = document.getElementById('playlist-container');
+
+// Button click to call on child
+updateBtn.addEventListener('click', (event) => {
+  console.log('Button clicked for child');
+
+ // Div click to call on parent
+container.addEventListener('click', (event) => {
+  console.log('Div clicked for parent'); 
+
 
