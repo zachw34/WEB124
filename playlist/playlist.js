@@ -52,7 +52,7 @@ container.addEventListener('click', (event) => {
 const playlist = document.querySelector('ul');
   playlist.addEventListener('click', (event) => {
     // checks to see if clicked element is an li element so we only click on songs
-  if (event.target.tagName === 'li') {
+  if (event.target.closest === 'li') {
     console.log(event.target.textContent);
   }
   });
