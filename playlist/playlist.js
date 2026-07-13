@@ -36,9 +36,20 @@ const container = document.getElementById('playlist-container');
 // Button click to call on child
 updateBtn.addEventListener('click', (event) => {
   console.log('Button clicked for child');
+});
 
  // Div click to call on parent
 container.addEventListener('click', (event) => {
   console.log('Div clicked for parent'); 
+});
 
+// Part 4 Event Delegation
 
+// 1. Add one click event listener to the <ul> element
+const playlist = document.querySelector('ul');
+  playlist.addEventListener('click', (event) => {
+    // checks to see if clicked element is an li element so we only click on songs
+  if (event.target.tagName === 'li') {
+    console.log(event.target.textContent);
+  }
+  });
