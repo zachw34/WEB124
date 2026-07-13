@@ -56,5 +56,4 @@ const playlist = document.querySelector('ul');
     // If a list item was clicked (or we clicked inside one), log the text
     if (clickedItem)
     console.log(clickedItem.textContent);
-  }
   });
