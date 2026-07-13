@@ -36,6 +36,9 @@ const container = document.getElementById('playlist-container');
 // Button click to call on child
 updateBtn.addEventListener('click', (event) => {
   console.log('Button clicked for child');
+
+  // Stops the event from bubbling up to the div
+  event.stopPropagation(); 
 });
 
  // Div click to call on parent
