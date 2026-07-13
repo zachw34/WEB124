@@ -55,6 +55,6 @@ const playlist = document.querySelector('ul');
   const clickedItem = event.target.closest ('li');
     // If a list item was clicked (or we clicked inside one), log the text
     if (clickedItem)
-    console.log(event.target.textContent);
+    console.log(clickedItem.textContent);
   }
   });
