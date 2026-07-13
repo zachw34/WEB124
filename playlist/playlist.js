@@ -56,3 +56,10 @@ const playlist = document.querySelector('ul');
     console.log(event.target.textContent);
   }
 });
+
+// Part 5 Browser Defaults
+
+document.querySelector('a').addEventListener('click', function(event) {
+  event.preventDefault();
+  console.log('The default action was prevented.');
+});
