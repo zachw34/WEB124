@@ -63,3 +63,10 @@ document.querySelector('a').addEventListener('click', function(event) {
   event.preventDefault();
   console.log('The default action was prevented.');
 });
+
+// Reflection
+
+// What is the difference between getElementById() and querySelector()? Both are used to retrieve elements from the DOM. ById gets single uniue ID. querySelector grabs the first match element it encounters, requires parsing.
+// What is event bubbling? When using an event, it goes directly to the element clicked and bubbles it up in the DOM tree to its parent.
+// What is event delegation? Also uses event bubbling but this one attaches a single event listener to a common parent element. A child clicked makes the event bubble up the parent.
+// Why would someone want to use preventDefault()? It haults the browser from executing the default action associated with an event. Good for things like links.
