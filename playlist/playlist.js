@@ -51,9 +51,8 @@ container.addEventListener('click', (event) => {
 // 1. Add one click event listener to the <ul> element
 const playlist = document.querySelector('ul');
   playlist.addEventListener('click', (event) => {
-    // checks to see if clicked element is an li element so we only click on songs
-  const clickedItem = event.target.closest ('li');
-    // If a list item was clicked (or we clicked inside one), log the text
-    if (clickedItem)
-    console.log(clickedItem.textContent);
-  });
+     // checks to see if clicked element is an li element so we only click on songs
+  if (event.target.tagName === 'LI') {
+    console.log(event.target.textContent);
+  }
+});
