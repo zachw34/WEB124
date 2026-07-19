@@ -4,8 +4,9 @@
 
 // 2. Render properties targeting specific element IDs on the page
 document.addEventListener("DOMContentLoaded", () => {
-    const windowLocation = document.getElementById("windowLocation");
-    const navLanguage = document.getElementById("navLanguage");
+    const windowLocationEl = document.getElementById("windowLocation");
+    const navLanguageEl = document.getElementById("navLanguage");
+    const widthHeightEl = document.getElementById("widthHeight");
 
     if (windowLocationEl) {
         windowLocationEl.innerHTML = `<strong>Page URL:</strong> ${window.location.href}`;
