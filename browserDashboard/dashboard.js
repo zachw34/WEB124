@@ -4,8 +4,8 @@
 
 Display the URL directly on the web page (inside your output section)
 document.addEventListener("DOMContentLoaded", () => {
-    const outputContent = document.getElementById("outputDisplay");
-    if (outputContent) {
-        outputContent.innerHTML = `<strong>Page URL:</strong> ${window.location.href}`;
+    const outputDisplay = document.getElementById("outputDisplay");
+    if (outputDisplay) {
+        outputDisplay.innerHTML = `<strong>Page URL:</strong> ${window.location.href}`;
     }
 });
