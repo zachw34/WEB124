@@ -21,3 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
         widthHeightEl.innerHTML = `<strong>Screen Resolution:</strong> ${screen.width}px width × ${screen.height}px height`;
     }
 });
+
+// Part 2 Window information
+
+// 1. The width of the browser window
+console.log("Browser Window Width:", window.innerWidth);
+// 2. The height of the browser window
+console.log("Browser Window Height:", window.innerHeight);
