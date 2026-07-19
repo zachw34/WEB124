@@ -2,7 +2,7 @@
 
 // Part 1: Browser Information
 
-Display the URL directly on the web page (inside your output section)
+// Display the URL directly on the web page (inside your output section)
 document.addEventListener("DOMContentLoaded", () => {
     const outputContent = document.getElementById("outputContent");
     if (outputContent) {
