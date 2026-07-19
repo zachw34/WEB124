@@ -28,3 +28,25 @@ document.addEventListener("DOMContentLoaded", () => {
 console.log("Browser Window Width:", window.innerWidth);
 // 2. The height of the browser window
 console.log("Browser Window Height:", window.innerHeight);
+
+// Part 3 
+
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Access the form using document.forms (first form, so index 0)
+    const dashForm = document.forms[0];
+    console.log("Accessed Form:", dashForm);
+
+    if (dashForm) {
+        // 2. Approach A: Access fields using form.elements collection
+        const nameFieldViaElements = dashForm.elements["name"];
+        const emailFieldViaElements = dashForm.elements["email"];
+        
+        console.log("Via form.elements:", nameFieldViaElements, emailFieldViaElements);
+
+        // 3. Approach B: Access fields using the shorter form.fieldName notation
+        const nameFieldDirect = dashForm.name;
+        const emailFieldDirect = dashForm.email;
+
+        console.log("Via form.fieldName:", nameFieldDirect, emailFieldDirect);
+    }
+});
