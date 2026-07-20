@@ -80,3 +80,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Part 4 Focus & Blur
+
+    document.addEventListener("DOMContentLoaded", () => {
+        // Access the form using document.forms collection
+        const dashForm = document.forms[0];
+    
+        if (dashForm) {
+            // Select the name field using form shortcut notation
+            const nameField = dashForm.name;
+    
+            if (nameField) {
+                // 1. Create a focus event listener for the name field
+                nameField.addEventListener("focus", () => {
+                    console.log("The name field was selected (focused).");
+                });
+    
+                // 2. Create a blur event listener for the name field
+                nameField.addEventListener("blur", () => {
+                    console.log("The name field was left (blurred).");
+                });
+            }
+        }
+    });
