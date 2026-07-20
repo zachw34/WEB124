@@ -104,3 +104,32 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+
+// Part 5 URL Objects
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("bookForm");
+
+  form.addEventListener("submit", (event) => {
+    // 1. Prevent the page from refreshing on form submission
+    event.preventDefault();
+
+    // 2. Grab the value from the website input field
+    const websiteInput = document.getElementById("website").value;
+
+    try {
+      // 3. Create a new native JavaScript URL Object
+      const userUrl = new URL(websiteInput);
+
+      // 4. Extract target data components from the URL object
+      const hostname = userUrl.hostname;
+      const protocol = userUrl.protocol;
+      const pathname = userUrl.pathname;
+
+     // 5. Display the information on the webpage
+      document.getElementById("urlHostname").textContent = `Hostname: ${hostname}`;
+      document.getElementById("urlProtocol").textContent = `Protocol: ${protocol}`;
+      document.getElementById("urlPathname").textContent = `Pathname: ${pathname}`;
+       }
+      });
+    });
