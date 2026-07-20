@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Part 5 URL Objects
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("bookForm");
+  const form = document.getElementById("dashForm");
 
   form.addEventListener("submit", (event) => {
     // 1. Prevent the page from refreshing on form submission
