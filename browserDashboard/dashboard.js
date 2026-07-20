@@ -107,38 +107,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Part 5 URL Objects
 
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("dashForm");
+// 1. Parse and extract URL components safely
+let urlDataText = '';
+try {
+  const favoriteURL = new URL(websiteValue);
+  
+  // Extract hostname, protocol, and pathname
+  urlDataText = ` [Hostname: ${favoriteURL.hostname} | Protocol: ${favoriteURL.protocol} | Pathname: ${favoriteURL.pathname}]`;
+} catch (error) {
+  urlDataText = ' [Invalid URL format]';
+}
 
-  form.addEventListener("submit", (event) => {
-    // 1. Prevent the page from refreshing on form submission
-    event.preventDefault();
+// 2. Display Form Data + URL Object Information on the page
+const windowLocationPara = document.getElementById('windowLocation');
+windowLocationPara.textContent = `User: ${nameValue} (${emailValue}) | Fav Site: ${websiteValue}${urlDataText}`;
 
-    // 2. Grab the value from the website input field
-    const websiteInput = document.getElementById("website").value;
-
-    try {
-      // 3. Create a new native JavaScript URL Object
-      const userUrl = new URL(websiteInput);
-
-      // 4. Extract target data components from the URL object
-      const hostname = userUrl.hostname;
-      const protocol = userUrl.protocol;
-      const pathname = userUrl.pathname;
-
-     // 5. Display the information on the webpage
-      document.getElementById("urlHostname").textContent = `Hostname: ${hostname}`;
-      document.getElementById("urlProtocol").textContent = `Protocol: ${protocol}`;
-      document.getElementById("urlPathname").textContent = `Pathname: ${pathname}`;
-
-    } catch (error) {
-      // 6. Handle invalid URL format inputs safely
-      document.getElementById("errorMessage").textContent = "Please enter a valid URL (including http:// or https://).";
-      
-      // Clear previous successful outputs on error
-      document.getElementById("urlHostname").textContent = "";
-      document.getElementById("urlProtocol").textContent = "";
-      document.getElementById("urlPathname").textContent = "";
-       }
-      });
-    });
+// 3. Mirror the exact same information to the developer console
+console.log(`User: ${nameValue} (${emailValue}) | Fav Site: ${websiteValue}${urlDataText}`);
+console.log(`Browser Language: ${navigator.language}`);
