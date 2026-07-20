@@ -111,14 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
 let urlDataText = '';
 try {
   const favoriteURL = new URL(websiteValue);
-  
   // Extract hostname, protocol, and pathname
   urlDataText = ` [Hostname: ${favoriteURL.hostname} | Protocol: ${favoriteURL.protocol} | Pathname: ${favoriteURL.pathname}]`;
 } catch (error) {
   urlDataText = ' [Invalid URL format]';
 }
 
-// 2. Display Form Data + URL Object Information on the page
+// 2. Display form data + URL object information on the page
 const windowLocationPara = document.getElementById('windowLocation');
 windowLocationPara.textContent = `User: ${nameValue} (${emailValue}) | Fav Site: ${websiteValue}${urlDataText}`;
 
