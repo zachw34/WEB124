@@ -7,14 +7,6 @@
     <meta name="viewport"  content="width=device-width, initial-scale=1.0">
     <title>Book Explorer</title>
     <script src="dashboard.js" defer></script>
-  
-    <style>
-      .highlight {
-        background-color: #DFFF00;
-        font-weight: bold;
-        padding: 5px;
-      }
-    </style>
   </head>
 
   
@@ -30,6 +22,11 @@
       <input type="text" name="name"><br>
     <label for="email">Email Address:</label>
       <input type="email" id="email" name="email" required>
+    
+    <!-- New Website Input Field -->
+    <label for="website">Favorite Website URL:</label>
+      <input type="url" id="website" name="website" placeholder="https://example.com" required><br>
+    
     <!-- Submit Button -->
         <button type="submit" id="submitBtn" name="submitBtn">Submit Details</button>
 </form>
