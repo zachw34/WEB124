@@ -130,6 +130,15 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("urlHostname").textContent = `Hostname: ${hostname}`;
       document.getElementById("urlProtocol").textContent = `Protocol: ${protocol}`;
       document.getElementById("urlPathname").textContent = `Pathname: ${pathname}`;
+
+    } catch (error) {
+      // 6. Handle invalid URL format inputs safely
+      document.getElementById("errorMessage").textContent = "Please enter a valid URL (including http:// or https://).";
+      
+      // Clear previous successful outputs on error
+      document.getElementById("urlHostname").textContent = "";
+      document.getElementById("urlProtocol").textContent = "";
+      document.getElementById("urlPathname").textContent = "";
        }
       });
     });
