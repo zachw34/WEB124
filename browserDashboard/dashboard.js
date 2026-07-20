@@ -77,4 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Log values to console to verify successful processing (Moved inside event)
             console.log("Form successfully captured:", { name: userName, email: userEmail });
-        }); 
+        });
+    }
+});
