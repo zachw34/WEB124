@@ -11,5 +11,5 @@ const fruitSpreads = [
     category: "Jellies",
     items: ["Apple Jelly", "Grape Jelly", "Peach Jelly", "Prickly Pear Jelly"]
   }
-  console.log(fruitSpreads);
   ];
+console.log(fruitSpreads);
