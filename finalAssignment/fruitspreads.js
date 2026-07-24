@@ -16,11 +16,8 @@ console.log(fruitSpreads);
 
 // Part 3 DOM Selection and Modification
 
-// Target the Jams heading
-const jamHeading = document.getElementById('heading-two');
+// Jump to the Jams heading
+document.getElementById("heading-two").scrollIntoView({ behavior: 'smooth' });
 
-jamHeading.addEventListener('click', () => {
-    jamHeading.style.backgroundColor = '#ff4d4d';
-    jamHeading.style.color = 'white';
-    jamHeading.textContent = '🔥 Mega Jam Selection!';
-});
+// Jump to the Jellies heading
+document.getElementById("heading-three").scrollIntoView({ behavior: 'smooth' });
