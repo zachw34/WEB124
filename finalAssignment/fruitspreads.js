@@ -13,3 +13,14 @@ const fruitSpreads = [
   }
   ];
 console.log(fruitSpreads);
+
+// Part 3 DOM Selection and Modification
+
+// Target the Jams heading
+const jamHeading = document.getElementById('heading-two');
+
+jamHeading.addEventListener('click', () => {
+    jamHeading.style.backgroundColor = '#ff4d4d';
+    jamHeading.style.color = 'white';
+    jamHeading.textContent = '🔥 Mega Jam Selection!';
+});
