@@ -20,4 +20,4 @@ console.log(fruitSpreads);
 document.getElementById("heading-two").scrollIntoView({ behavior: 'smooth' });
 
 // Jump to the Jellies heading
-document.getElementById("heading-three").scrollIntoView({ behavior: 'smooth' });
+document.querySelector("heading-three").scrollIntoView({ behavior: 'smooth' });
