@@ -21,3 +21,20 @@ document.getElementById("heading-two").scrollIntoView({ behavior: 'smooth' });
 
 // Jump to the Jellies heading
 document.querySelector("heading-three").scrollIntoView({ behavior: 'smooth' });
+
+// Part 4 Events
+
+// First Event: Click Event 
+
+const headingTwo = document.getElementById("heading-two");
+const headingThree = document.getElementById("heading-three");
+
+headingTwo.addEventListener("click", function () {
+  console.log("I am heading two!");
+});
+
+headingThree.addEventListener("click", function () {
+  console.log("I am heading three!");
+});
+
+
