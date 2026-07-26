@@ -11,7 +11,7 @@ console.log(fruitSpreads);
 
 // Part 3: DOM Selection and Modification
 const headingTwo = document.getElementById("heading-two");
-const headingThree = document.getElementById("heading-three");
+const headingThree = document.querySelector("heading-three");
 
 // Part 4: Events
 // First Event: Click Event that scrolls into view when clicked
