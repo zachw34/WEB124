@@ -14,7 +14,7 @@ const headingTwo = document.getElementById("heading-two");
 const headingThree = document.getElementById("heading-three");
 
 // Part 4: Events
-// First Event: Click Event
+// First Event: Click Event that scrolls into view when clicked
 headingTwo.addEventListener('click', function () {
   console.log('I am heading two!');
   headingTwo.scrollIntoView({ behavior: 'smooth' });
