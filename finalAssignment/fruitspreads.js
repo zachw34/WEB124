@@ -29,24 +29,23 @@ headingThree.addEventListener('click', function () {
 // When you click the image the figcaption appears and if you click it again it will disappear 
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Single listener to the document body or a specific container element
+  // Single listener to the document body or container
   document.body.addEventListener("click", (event) => {
-    // Check if the clicked element has the 'toggle-img' class
-    if (event.target.matches(".toggle-img")) {
-      const img = event.target;
-      
-      // Get the parent figure and the connected figcaption
-      const figure = img.closest("figure");
-      if (!figure) return; // Safety check
-      
-      const figcaption = figure.querySelector("figcaption");
-      if (!figcaption) return; // Safety check
-
-      // Toggle the display property
-      if (figcaption.style.display === "none" || getComputedStyle(figcaption).display === "none") {
-        figcaption.style.display = "block";
-      } else {
-        figcaption.style.display = "none";
+    // Check if the clicked element is one of our toggle images
+    if (event.target.classList.contains("toggle-img")) {
+      // Find the parent <figure> container
+      const figure = event.target.closest("figure");
+      if (figure) {
+        // Find the <figcaption> inside this figure
+        const figcaption = figure.querySelector("figcaption");
+        if (figcaption) {
+          // Toggle the display style between block/inline and none
+          if (figcaption.style.display === "none") {
+            figcaption.style.display = "block";
+          } else {
+            figcaption.style.display = "none";
+          }
+        }
       }
     }
   });
