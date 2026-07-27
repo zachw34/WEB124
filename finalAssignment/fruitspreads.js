@@ -25,4 +25,29 @@ headingThree.addEventListener('click', function () {
   headingThree.scrollIntoView({ behavior: 'smooth' });
 });
 
+// Part 5: Event Delagation or Event Bubbling
+// When you click the image the figcaption appears and if you click it again it will disappear 
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Single listener to the document body or a specific container element
+  document.body.addEventListener("click", (event) => {
+    // Check if the clicked element has the 'toggle-img' class
+    if (event.target.matches(".toggle-img")) {
+      const img = event.target;
+      
+      // Get the parent figure and the connected figcaption
+      const figure = img.closest("figure");
+      if (!figure) return; // Safety check
+      
+      const figcaption = figure.querySelector("figcaption");
+      if (!figcaption) return; // Safety check
+
+      // Toggle the display property
+      if (figcaption.style.display === "none" || getComputedStyle(figcaption).display === "none") {
+        figcaption.style.display = "block";
+      } else {
+        figcaption.style.display = "none";
+      }
+    }
+  });
+});
