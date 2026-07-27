@@ -16,7 +16,7 @@
 
   /* Control the size of the images */
   .toggle-img {
-    width: 150px;    /* Adjust this value to make them smaller/larger */
+    width: 250px;    /* Adjust this value to make them smaller/larger */
     height: auto;    /* Keeps the aspect ratio intact */
     object-fit: cover;
     border-radius: 4px;
