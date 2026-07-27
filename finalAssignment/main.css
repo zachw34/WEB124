@@ -20,4 +20,21 @@
     height: auto;    /* Keeps the aspect ratio intact */
     object-fit: cover;
     border-radius: 4px;
+
+  /* Initial state: image is greyed out */
+  filter: grayscale(100%);
+  opacity: 0.6;
+  cursor: pointer;
+  transition: filter 0.3s ease, opacity 0.3s ease;
   }
+
+/* Active state: image returns to full color when caption is shown */
+.toggle-img.active {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Initial state: figcaption is hidden */
+figure figcaption {
+  display: none;
+}
