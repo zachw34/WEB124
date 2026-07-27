@@ -4,7 +4,7 @@
   .inventory {
     display: flex;
     flex-wrap: wrap; /* Wrap if the screen is too small */
-    gap: 10px;       /* Adds space between the images */
+    gap: 5px;       /* Adds space between the images */
     padding: 0;
     list-style: none;
   }
