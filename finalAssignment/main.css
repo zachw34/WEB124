@@ -19,7 +19,23 @@ header a {
   color: white;
 }
 
-  /* Make the inventory list a flex container to align items in a row */
+/* Section Boxes for content */
+.content {
+	background-color: #74C36540;
+	border: .5rem solid black;
+	margin: 2rem;
+	padding: 4rem;
+	text-align: center;
+  position: relative; /* REQUIRED: Sets context for children */
+  width: 80%;       /* 80% of Body */
+  height: auto;      /* Any height */
+}
+
+#heading h1, h2, h3 {
+	color: green;
+}
+
+/* Make the inventory list a flex container to align items in a row */
   .inventory {
     display: flex;
     flex-wrap: wrap; /* Wrap if the screen is too small */
