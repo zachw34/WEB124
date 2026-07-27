@@ -39,11 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
         // Find the <figcaption> inside this figure
         const figcaption = figure.querySelector("figcaption");
         if (figcaption) {
-          // Toggle the display style between block/inline and none
-          if (figcaption.style.display === "none") {
+          // Toggle the display style and the image's active class
+          if (figcaption.style.display === "none" || figcaption.style.display === "") {
             figcaption.style.display = "block";
+            event.target.classList.add("active");
           } else {
             figcaption.style.display = "none";
+            event.target.classList.remove("active");
           }
         }
       }
