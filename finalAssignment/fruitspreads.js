@@ -125,6 +125,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Part 8: Storage
+// STORE THE DATA IN LOCALSTORAGE
+    localStorage.setItem('savedUserName', userName);
+    localStorage.setItem('savedUserEmail', userEmail);
+
 // Part 9: Reflection
 // At the bottom of your JavaScript file, answer the following questions as comments:
 
