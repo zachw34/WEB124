@@ -52,3 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
+// Part 9: Reflection
+// At the bottom of your JavaScript file, answer the following questions as comments:
+
+//     - Which JavaScript feature was easiest for you to use? Probably using objects and array
+//     - Which JavaScript feature was most challenging? The challenge to not use for each and do event delegation for my images
+//     - How did you use events in your project? The coolest part is when you click on the images and you see the toggle 
+//     - How did you use storage in your project?
